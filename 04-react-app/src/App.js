@@ -6,6 +6,8 @@ import RefComponent from "./components/RefComponent";
 import ControlledComponent from "./components/ControlledComponent";
 import CounterComponent from "./components/CounterComponent";
 import TodoList from "./components/TodoList";
+import ReducerComponent from "./components/ReducerComponent";
+import ProductsComponent from "./components/ProductsComponent";
 
 function App() {
   return (
@@ -35,6 +37,12 @@ function App() {
           <Link to="/todo" className="font-bold text-2xl text-blue-700">
             Lista Todo
           </Link>
+          <Link to="/reduce" className="font-bold text-2xl text-blue-700">
+            Reducer
+          </Link>
+          <Link to="/productos" className="font-bold text-2xl text-blue-700">
+            Productos
+          </Link>
         </div>
         <Routes>
           <Route path="/hola-mundo" exact element={<HelloWorld />} />
@@ -47,6 +55,8 @@ function App() {
           />
           <Route path="/contador" exact element={<CounterComponent />} />
           <Route path="/todo" exact element={<TodoList />} />
+          <Route path="/reduce" exact element={<ReducerComponent />} />
+          <Route path="/productos" exact element={<ProductsComponent />} />
         </Routes>
       </main>
     </BrowserRouter>
